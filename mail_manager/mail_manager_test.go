@@ -20,7 +20,7 @@ func TestMailManager_SendEmail(t *testing.T) {
 		fmt.Printf("add smtp server error|%v\n", err)
 		return
 	}
-	htmlContent := mail2.NewHtmlContent("<h1>这是一封测试邮件520</h1>")
+	htmlContent := mail2.NewHtmlContent("<h1>这是一封测试邮件521</h1>")
 	err = mailManager.SendEmail([]string{
 		"",
 	}, "你好，我是gomail", htmlContent, htmlContent.GetContentType())
